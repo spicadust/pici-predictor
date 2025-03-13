@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pici_predictor"
+version = "0.1.0"
+requires-python = ">=3.12, <3.13"
+dependencies = [
+  "notebook",
+  "python-dotenv",
+  "bio>=1.7.1",
+  "scikit-learn>=1.6.1",
+  "umap>=0.1.1",
+  "matplotlib>=3.10.0",
+  "seaborn>=0.13.2",
+  "plotly>=6.0.0",
+  "openpyxl>=3.1.5",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[dependency-groups]
+dev = ["ruff"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pici_predictor"]
