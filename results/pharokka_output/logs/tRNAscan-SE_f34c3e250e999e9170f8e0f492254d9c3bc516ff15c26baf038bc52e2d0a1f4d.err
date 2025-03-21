@@ -1,0 +1,20 @@
+
+tRNAscan-SE v.2.0.12 (Nov 2022) - scan sequences for transfer RNAs
+Copyright (C) 2022 Patricia Chan and Todd Lowe
+                   University of California Santa Cruz
+Freely distributed under the GNU General Public License (GPLv3)
+
+------------------------------------------------------------
+Sequence file(s) to search:        /content/PICI_NucSequences_060723.fst
+Search Mode:                       General
+Results written to:                Standard output
+Output format:                     Tabular
+Searching with:                    Infernal single-pass scan
+                                   Fast mode
+Covariance model:                  /usr/local/lib/tRNAscan-SE/models/TRNAinf.cm
+
+Temporary directory:               /tmp
+tRNA predictions saved to:         /content/drive/MyDrive/output_pharokka/trnascan_out.gff
+------------------------------------------------------------
+
+Command line: tRNAscan-SE --thread 4 -G -Q -j /content/drive/MyDrive/output_pharokka/trnascan_out.gff /content/PICI_NucSequences_060723.fst

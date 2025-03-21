@@ -1,0 +1,69 @@
+2025-03-21 03:02:27.450 | INFO     | __main__:main:95 - Starting Pharokka v1.7.5
+2025-03-21 03:02:27.451 | INFO     | __main__:main:96 - Command executed: Namespace(infile='/content/PICI_NucSequences_060723.fst', outdir='/content/drive/MyDrive/output_pharokka', database='pharokka_db', threads='4', force=True, prefix='pharokka', locustag='Default', gene_predictor='phanotate', meta=False, split=False, coding_table='11', evalue='1E-05', fast=True, mmseqs2_only=False, meta_hmm=False, dnaapler=False, custom_hmm='', genbank=False, terminase=False, terminase_strand='nothing', terminase_start='nothing', skip_extra_annotations=False, skip_mash=False, minced_args='', mash_distance=0.2, trna_scan_model='general', citation=False)
+2025-03-21 03:02:27.451 | INFO     | __main__:main:97 - Repository homepage is https://github.com/gbouras13/pharokka
+2025-03-21 03:02:27.452 | INFO     | __main__:main:98 - Written by George Bouras: george.bouras@adelaide.edu.au
+2025-03-21 03:02:27.452 | INFO     | __main__:main:100 - Checking database installation in pharokka_db.
+2025-03-21 03:02:27.453 | INFO     | __main__:main:103 - All databases have been successfully checked.
+2025-03-21 03:02:27.454 | INFO     | __main__:main:119 - Checking dependencies.
+2025-03-21 03:02:27.621 | INFO     | input_commands:check_dependencies:390 - Phanotate version found is v1.5.1
+2025-03-21 03:02:27.622 | INFO     | input_commands:check_dependencies:399 - Phanotate version is ok.
+2025-03-21 03:02:27.633 | INFO     | input_commands:check_dependencies:426 - MMseqs2 version found is v13.45111
+2025-03-21 03:02:27.634 | INFO     | input_commands:check_dependencies:435 - MMseqs2 version is ok.
+2025-03-21 03:02:27.765 | INFO     | input_commands:check_dependencies:459 - tRNAscan-SE version found is v2.0.12
+2025-03-21 03:02:27.766 | INFO     | input_commands:check_dependencies:470 - tRNAscan-SE version is ok.
+2025-03-21 03:02:28.170 | INFO     | input_commands:check_dependencies:494 - MinCED version found is v0.4.2
+2025-03-21 03:02:28.170 | INFO     | input_commands:check_dependencies:505 - MinCED version is ok.
+2025-03-21 03:02:28.173 | INFO     | input_commands:check_dependencies:531 - ARAGORN version found is v1.2.41
+2025-03-21 03:02:28.174 | INFO     | input_commands:check_dependencies:542 - ARAGORN version is ok.
+2025-03-21 03:02:28.199 | INFO     | input_commands:check_dependencies:559 - mash version found is v2.3
+2025-03-21 03:02:28.200 | INFO     | input_commands:check_dependencies:566 - mash version is ok.
+2025-03-21 03:02:28.895 | INFO     | input_commands:check_dependencies:585 - Dnaapler version found is v1.2.0
+2025-03-21 03:02:28.895 | INFO     | input_commands:check_dependencies:592 - Dnaapler version is ok.
+2025-03-21 03:02:28.896 | INFO     | input_commands:check_dependencies:604 - Pyrodigal version is v3.6.3
+2025-03-21 03:02:28.896 | INFO     | input_commands:check_dependencies:605 - Pyrodigal version is ok.
+2025-03-21 03:02:28.897 | INFO     | input_commands:check_dependencies:617 - Pyrodigal_gv version is v0.3.2
+2025-03-21 03:02:28.897 | INFO     | input_commands:check_dependencies:618 - Pyrodigal_gv version is ok.
+2025-03-21 03:02:28.903 | INFO     | input_commands:validate_fasta:237 - Checking input /content/PICI_NucSequences_060723.fst.
+2025-03-21 03:02:28.904 | INFO     | input_commands:validate_fasta:239 - Input /content/PICI_NucSequences_060723.fst is in FASTA format.
+2025-03-21 03:02:28.904 | INFO     | input_commands:validate_fasta:244 - Checking input /content/PICI_NucSequences_060723.fst for duplicate FASTA headers.
+2025-03-21 03:02:28.974 | INFO     | input_commands:validate_fasta:246 - All headers in /content/PICI_NucSequences_060723.fst are unique.
+2025-03-21 03:02:28.974 | INFO     | input_commands:validate_gene_predictor:275 - Phanotate will be used for gene prediction.
+2025-03-21 03:02:28.975 | INFO     | __main__:main:255 - You have specified --fast or --hmm_only. MMseqs2 will not be run.
+2025-03-21 03:02:29.013 | INFO     | input_commands:validate_meta:312 - More than one contig detected in the input file. Re-running pharokka with -m meta mode is recommended unless this is a fragmented isolate genome. Continuing.
+2025-03-21 03:02:29.013 | INFO     | __main__:main:280 - Running Phanotate.
+2025-03-21 03:02:29.023 | INFO     | external_tools:run:50 - Started running phanotate.py -f fasta -o /content/drive/MyDrive/output_pharokka/phanotate_out_tmp.fasta /content/PICI_NucSequences_060723.fst ...
+2025-03-21 04:05:59.364 | INFO     | external_tools:run:52 - Done running phanotate.py -f fasta -o /content/drive/MyDrive/output_pharokka/phanotate_out_tmp.fasta /content/PICI_NucSequences_060723.fst
+2025-03-21 04:05:59.378 | INFO     | external_tools:run:50 - Started running phanotate.py -f tabular -o /content/drive/MyDrive/output_pharokka/phanotate_out.txt /content/PICI_NucSequences_060723.fst ...
+2025-03-21 05:09:00.057 | INFO     | external_tools:run:52 - Done running phanotate.py -f tabular -o /content/drive/MyDrive/output_pharokka/phanotate_out.txt /content/PICI_NucSequences_060723.fst
+2025-03-21 05:09:04.124 | INFO     | __main__:main:309 - Starting tRNA-scanSE.
+2025-03-21 05:09:04.132 | INFO     | external_tools:run:50 - Started running tRNAscan-SE --thread 4 -G -Q -j /content/drive/MyDrive/output_pharokka/trnascan_out.gff /content/PICI_NucSequences_060723.fst ...
+2025-03-21 05:09:54.729 | INFO     | external_tools:run:52 - Done running tRNAscan-SE --thread 4 -G -Q -j /content/drive/MyDrive/output_pharokka/trnascan_out.gff /content/PICI_NucSequences_060723.fst
+2025-03-21 05:09:54.731 | INFO     | processes:run_minced:827 - Running MinCED.
+2025-03-21 05:09:54.739 | INFO     | external_tools:run:50 - Started running minced /content/PICI_NucSequences_060723.fst /content/drive/MyDrive/output_pharokka/pharokka_minced_spacers.txt /content/drive/MyDrive/output_pharokka/pharokka_minced.gff ...
+2025-03-21 05:10:02.674 | INFO     | external_tools:run:52 - Done running minced /content/PICI_NucSequences_060723.fst /content/drive/MyDrive/output_pharokka/pharokka_minced_spacers.txt /content/drive/MyDrive/output_pharokka/pharokka_minced.gff
+2025-03-21 05:10:02.676 | INFO     | processes:run_aragorn:859 - Running Aragorn.
+2025-03-21 05:10:02.684 | INFO     | external_tools:run:50 - Started running aragorn -l -gcbact -w -m -o /content/drive/MyDrive/output_pharokka/pharokka_aragorn.txt /content/PICI_NucSequences_060723.fst ...
+2025-03-21 05:10:08.750 | INFO     | external_tools:run:52 - Done running aragorn -l -gcbact -w -m -o /content/drive/MyDrive/output_pharokka/pharokka_aragorn.txt /content/PICI_NucSequences_060723.fst
+2025-03-21 05:10:08.754 | INFO     | __main__:main:348 - Running PyHMMER on PHROGs.
+2025-03-21 06:06:43.380 | INFO     | __main__:main:364 - Post Processing Output.
+2025-03-21 06:06:48.341 | INFO     | post_processing:process_vfdb_results:2351 - Processing VFDB output.
+2025-03-21 06:06:48.379 | INFO     | post_processing:process_vfdb_results:2437 - 0 VFDB virulence factors identified.
+2025-03-21 06:06:48.383 | INFO     | post_processing:process_card_results:2455 - Processing CARD output.
+2025-03-21 06:06:48.420 | INFO     | post_processing:process_card_results:2578 - 0 CARD AMR genes identified.
+2025-03-21 06:07:19.721 | INFO     | __main__:main:435 - Converting gff to genbank.
+2025-03-21 06:07:30.608 | INFO     | post_processing:extract_terl:1982 - Terminase large subunit found.
+2025-03-21 06:07:30.618 | INFO     | post_processing:extract_terl:1985 - More than one CDS annotated as terminase large subunit found. 
+Saving all.
+2025-03-21 06:07:32.245 | INFO     | __main__:main:453 - Finding the closest match for each contig in INPHARED using mash.
+2025-03-21 06:07:32.253 | INFO     | external_tools:run:50 - Started running mash sketch /content/PICI_NucSequences_060723.fst -o /content/drive/MyDrive/output_pharokka/input_mash_sketch.msh -i ...
+2025-03-21 06:07:33.537 | INFO     | external_tools:run:52 - Done running mash sketch /content/PICI_NucSequences_060723.fst -o /content/drive/MyDrive/output_pharokka/input_mash_sketch.msh -i
+2025-03-21 06:07:33.545 | INFO     | external_tools:run_to_stdout:59 - Started running mash dist /content/drive/MyDrive/output_pharokka/input_mash_sketch.msh pharokka_db/1Aug2023_genomes.fa.msh -d 0.2 -i ...
+2025-03-21 06:16:32.991 | INFO     | external_tools:run_to_stdout:61 - Done running mash dist /content/drive/MyDrive/output_pharokka/input_mash_sketch.msh pharokka_db/1Aug2023_genomes.fa.msh -d 0.2 -i
+2025-03-21 06:16:34.522 | INFO     | __main__:main:473 - Pharokka has finished.
+2025-03-21 06:16:34.523 | INFO     | __main__:main:474 - Elapsed time: 11647.08 seconds
+2025-03-21 06:16:34.524 | INFO     | __main__:main:476 - If you use Pharokka in your research, please cite:
+2025-03-21 06:16:34.524 | INFO     | __main__:main:477 - George Bouras, Roshan Nepal, Ghais Houtak, Alkis James Psaltis, Peter-John Wormald, Sarah Vreugde.
+2025-03-21 06:16:34.525 | INFO     | __main__:main:480 - Pharokka: a fast scalable bacteriophage annotation tool.
+2025-03-21 06:16:34.525 | INFO     | __main__:main:481 - Bioinformatics, Volume 39, Issue 1, January 2023, btac776.
+2025-03-21 06:16:34.526 | INFO     | __main__:main:482 - https://doi.org/10.1093/bioinformatics/btac776.
+2025-03-21 06:16:34.526 | INFO     | __main__:main:483 - You should also cite the full list of tools Pharokka uses, which can be found at https://github.com/gbouras13/pharokka#citation.
