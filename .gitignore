@@ -1,3 +1,5 @@
 dataset/*
 pharokka_db/*
 mmseqs
+mash
+output/*
