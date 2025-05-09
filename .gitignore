@@ -4,3 +4,4 @@ mmseqs
 mash
 output/*
 notebook/feature_generation.py
+notebook/CodonUsage.py
