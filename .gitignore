@@ -3,3 +3,4 @@ pharokka_db/*
 mmseqs
 mash
 output/*
+notebook/feature_generation.py
