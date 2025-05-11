@@ -3,6 +3,5 @@ pharokka_db/*
 mmseqs
 mash
 output/*
-notebook/feature_generation.py
-notebook/CodonUsage.py
+notebook/*.py
 notebook/__pycache__
