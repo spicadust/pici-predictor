@@ -28,6 +28,7 @@ dependencies = [
   "ipywidgets>=8.1.7",
   "pyarrow>=20.0.0",
   "networkx>=3.4.2",
+  "xgboost>=3.0.0",
 ]
 
 [tool.hatch.metadata]
