@@ -5,3 +5,4 @@ mash
 output/*
 notebook/*.py
 notebook/__pycache__
+models/*
