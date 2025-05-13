@@ -89,7 +89,7 @@ test_precision: 0.6061
 test_recall: 0.6556
 test_f1: 0.6299
 test_roc_auc: 0.8786
-test_mcc: 0.5504
+**test_mcc: 0.5504**
 
 Confusion Matrix Values:
 P: 11_208 Tp: 7_348 Fp: 4_775 N: 54_249 Tn: 49_474 Fn: 3_860
@@ -336,3 +336,321 @@ test_mcc: 0.3771
 
 Confusion Matrix Values:
 P: 1_681 Tp: 567 Fp: 685 N: 63_776 Tn: 63_091 Fn: 1_114
+
+## dna_rna_and_nucleotide_metabolism
+Top 20 most important features:
+BP:prop_res_Basic: 0.0153
+BP:prop_res_Charged: 0.0080
+BP:percent:C: 0.0056
+entropyAA: 0.0053
+RED_TRIPEP:CPG: 0.0048
+DIPEP:PC: 0.0039
+RED_TRIPEP:CAF: 0.0038
+RED_TRIPEP:KCC: 0.0037
+RED_TRIPEP:GCP: 0.0037
+RED_TRIPEP:KCH: 0.0034
+BP:percent:H: 0.0031
+RED_TRIPEP:CHP: 0.0027
+RED_TRIPEP:KCF: 0.0026
+HTS-T:2: 0.0024
+BP:molar_extinction_coefficient_cysteines: 0.0024
+BP:prop_res_Aromatic: 0.0024
+RED_TRIPEP:SPG: 0.0023
+RED_TRIPEP:SGH: 0.0023
+RED_TRIPEP:PGG: 0.0023
+RED_DIPEP:PC: 0.0021
+
+=== Training Set ===
+
+Metrics for train (threshold=0.5):
+train_accuracy: 0.9729
+train_precision: 0.9284
+train_recall: 0.9766
+train_f1: 0.9519
+train_roc_auc: 0.9969
+train_mcc: 0.9336
+
+Confusion Matrix Values:
+P: 50_137 Tp: 48_965 Fp: 3_776 N: 132_521 Tn: 128_745 Fn: 1_172
+
+=== Validation Set ===
+
+Metrics for val (threshold=0.5):
+val_accuracy: 0.7683
+val_precision: 0.5642
+val_recall: 0.6688
+val_f1: 0.6120
+val_roc_auc: 0.8379
+val_mcc: 0.4519
+
+Confusion Matrix Values:
+P: 30_690 Tp: 20_526 Fp: 15_857 N: 81_608 Tn: 65_751 Fn: 10_164
+
+=== Test Set ===
+
+Metrics for test (threshold=0.3):
+test_accuracy: 0.7313
+test_precision: 0.5890
+test_recall: 0.8540
+test_f1: 0.6972
+test_roc_auc: 0.8501
+test_mcc: 0.4963
+
+Confusion Matrix Values:
+P: 23_704 Tp: 20_243 Fp: 14_125 N: 41_753 Tn: 27_628 Fn: 3_461
+
+Metrics for test (threshold=0.4):
+test_accuracy: 0.7577
+test_precision: 0.6356
+test_recall: 0.7754
+test_f1: 0.6986
+test_roc_auc: 0.8501
+test_mcc: 0.5062
+
+Confusion Matrix Values:
+P: 23_704 Tp: 18_380 Fp: 10_538 N: 41_753 Tn: 31_215 Fn: 5_324
+
+Metrics for test (threshold=0.5):
+test_accuracy: 0.7725
+test_precision: 0.6854
+test_recall: 0.6869
+test_f1: 0.6862
+test_roc_auc: 0.8501
+test_mcc: 0.5077
+
+Confusion Matrix Values:
+P: 23_704 Tp: 16_283 Fp: 7_473 N: 41_753 Tn: 34_280 Fn: 7_421
+
+Metrics for test (threshold=0.6):
+test_accuracy: 0.7721
+test_precision: 0.7303
+test_recall: 0.5876
+test_f1: 0.6512
+test_roc_auc: 0.8501
+test_mcc: 0.4912
+
+Confusion Matrix Values:
+P: 23_704 Tp: 13_929 Fp: 5_144 N: 41_753 Tn: 36_609 Fn: 9_775
+
+Metrics for test (threshold=0.7):
+test_accuracy: 0.7558
+test_precision: 0.7721
+test_recall: 0.4619
+test_f1: 0.5780
+test_roc_auc: 0.8501
+test_mcc: 0.4486
+
+Confusion Matrix Values:
+P: 23_704 Tp: 10_948 Fp: 3_231 N: 41_753 Tn: 38_522 Fn: 12_756
+
+## head_and_packaging
+Top 20 most important features:
+BP:percent:C: 0.0087
+BP:prop_res_Aromatic: 0.0061
+BP:percent:H: 0.0051
+RED_TRIPEP:CCH: 0.0047
+RED_TRIPEP:PHK: 0.0044
+BP:isoelectric_point: 0.0041
+DIPEP:MC: 0.0041
+RED_TRIPEP:CFA: 0.0039
+BP:molecular_weight: 0.0036
+BP:prop_res_Basic: 0.0035
+RED_TRIPEP:CKC: 0.0033
+RED_DIPEP:EA: 0.0032
+HTS-T:2: 0.0032
+BP:length: 0.0032
+RED_TRIPEP:HSG: 0.0030
+RED_TRIPEP:CSL: 0.0029
+RED_TRIPEP:KCH: 0.0028
+BP:percent_strand_naive: 0.0027
+RED_TRIPEP:HPL: 0.0025
+RED_TRIPEP:CKK: 0.0024
+
+=== Training Set ===
+
+Metrics for train (threshold=0.5):
+train_accuracy: 0.9788
+train_precision: 0.9072
+train_recall: 0.9833
+train_f1: 0.9437
+train_roc_auc: 0.9983
+train_mcc: 0.9318
+
+Confusion Matrix Values:
+P: 33_031 Tp: 32_478 Fp: 3_322 N: 149_627 Tn: 146_305 Fn: 553
+
+=== Validation Set ===
+
+Metrics for val (threshold=0.5):
+val_accuracy: 0.8197
+val_precision: 0.5463
+val_recall: 0.4974
+val_f1: 0.5207
+val_roc_auc: 0.8006
+val_mcc: 0.4106
+
+Confusion Matrix Values:
+P: 22_113 Tp: 10_999 Fp: 9_135 N: 90_185 Tn: 81_050 Fn: 11_114
+
+=== Test Set ===
+
+Metrics for test (threshold=0.3):
+test_accuracy: 0.7717
+test_precision: 0.3970
+test_recall: 0.7520
+test_f1: 0.5196
+test_roc_auc: 0.8470
+test_mcc: 0.4222
+
+Confusion Matrix Values:
+P: 10_750 Tp: 8_084 Fp: 12_281 N: 54_707 Tn: 42_426 Fn: 2_666
+
+Metrics for test (threshold=0.4):
+test_accuracy: 0.8234
+test_precision: 0.4736
+test_recall: 0.6767
+test_f1: 0.5573
+test_roc_auc: 0.8470
+test_mcc: 0.4624
+
+Confusion Matrix Values:
+P: 10_750 Tp: 7_275 Fp: 8_085 N: 54_707 Tn: 46_622 Fn: 3_475
+
+Metrics for test (threshold=0.5):
+test_accuracy: 0.8569
+test_precision: 0.5613
+test_recall: 0.5901
+test_f1: 0.5753
+test_roc_auc: 0.8470
+test_mcc: 0.4896
+
+Confusion Matrix Values:
+P: 10_750 Tp: 6_344 Fp: 4_959 N: 54_707 Tn: 49_748 Fn: 4_406
+
+Metrics for test (threshold=0.6):
+test_accuracy: 0.8772
+test_precision: 0.6738
+test_recall: 0.4890
+test_f1: 0.5667
+test_roc_auc: 0.8470
+test_mcc: 0.5060
+
+Confusion Matrix Values:
+P: 10_750 Tp: 5_257 Fp: 2_545 N: 54_707 Tn: 52_162 Fn: 5_493
+
+Metrics for test (threshold=0.7):
+test_accuracy: 0.8818
+test_precision: 0.7909
+test_recall: 0.3813
+test_f1: 0.5145
+test_roc_auc: 0.8470
+test_mcc: 0.4960
+
+Confusion Matrix Values:
+P: 10_750 Tp: 4_099 Fp: 1_084 N: 54_707 Tn: 53_623 Fn: 6_651
+
+## integration_and_excision
+Top 20 most important features:
+BP:prop_res_Basic: 0.0218
+BP:isoelectric_point: 0.0094
+RED_TRIPEP:PSC: 0.0090
+DIPEP:SD: 0.0081
+BP:length: 0.0080
+BP:percent:R: 0.0072
+BP:percent:C: 0.0071
+RED_TRIPEP:KKH: 0.0070
+BP:molecular_weight: 0.0057
+RED_TRIPEP:AFH: 0.0051
+RED_TRIPEP:FCC: 0.0047
+RED_TRIPEP:FKP: 0.0043
+RED_TRIPEP:HCG: 0.0043
+RED_DIPEP:KK: 0.0039
+RED_TRIPEP:SCK: 0.0039
+DIPEP:DH: 0.0038
+BP:molar_extinction_coefficient_cysteines: 0.0038
+RED_TRIPEP:HSL: 0.0036
+RED_TRIPEP:CCL: 0.0034
+DIPEP:TC: 0.0033
+
+=== Training Set ===
+
+Metrics for train (threshold=0.5):
+train_accuracy: 0.9995
+train_precision: 0.9789
+train_recall: 1.0000
+train_f1: 0.9893
+train_roc_auc: 1.0000
+train_mcc: 0.9892
+
+Confusion Matrix Values:
+P: 4_273 Tp: 4_273 Fp: 92 N: 178_385 Tn: 178_293 Fn: 0
+
+=== Validation Set ===
+
+Metrics for val (threshold=0.5):
+val_accuracy: 0.9889
+val_precision: 0.7159
+val_recall: 0.7507
+val_f1: 0.7329
+val_roc_auc: 0.9781
+val_mcc: 0.7274
+
+Confusion Matrix Values:
+P: 2_286 Tp: 1_716 Fp: 681 N: 110_012 Tn: 109_331 Fn: 570
+
+=== Test Set ===
+
+Metrics for test (threshold=0.3):
+test_accuracy: 0.9842
+test_precision: 0.3861
+test_recall: 0.3037
+test_f1: 0.3399
+test_roc_auc: 0.8557
+test_mcc: 0.3345
+
+Confusion Matrix Values:
+P: 876 Tp: 266 Fp: 423 N: 64_581 Tn: 64_158 Fn: 610
+
+Metrics for test (threshold=0.4):
+test_accuracy: 0.9853
+test_precision: 0.4095
+test_recall: 0.2272
+test_f1: 0.2922
+test_roc_auc: 0.8557
+test_mcc: 0.2981
+
+Confusion Matrix Values:
+P: 876 Tp: 199 Fp: 287 N: 64_581 Tn: 64_294 Fn: 677
+
+Metrics for test (threshold=0.5):
+test_accuracy: 0.9860
+test_precision: 0.4466
+test_recall: 0.1815
+test_f1: 0.2581
+test_roc_auc: 0.8557
+test_mcc: 0.2788
+
+Confusion Matrix Values:
+P: 876 Tp: 159 Fp: 197 N: 64_581 Tn: 64_384 Fn: 717
+
+Metrics for test (threshold=0.6):
+test_accuracy: 0.9865
+test_precision: 0.4874
+test_recall: 0.1541
+test_f1: 0.2342
+test_roc_auc: 0.8557
+test_mcc: 0.2689
+
+Confusion Matrix Values:
+P: 876 Tp: 135 Fp: 142 N: 64_581 Tn: 64_439 Fn: 741
+
+Metrics for test (threshold=0.7):
+test_accuracy: 0.9864
+test_precision: 0.4712
+test_recall: 0.1119
+test_f1: 0.1808
+test_roc_auc: 0.8557
+test_mcc: 0.2249
+
+Confusion Matrix Values:
+P: 876 Tp: 98 Fp: 110 N: 64_581 Tn: 64_471 Fn: 778
