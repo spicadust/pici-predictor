@@ -6,4 +6,4 @@ output/*
 notebook/*.py
 notebook/__pycache__
 models/*
-document/note.md
+document/*.md
