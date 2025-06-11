@@ -1,5 +1,6 @@
 def matthews(y_true, y_pred):
     from math import sqrt
+    import pandas as pd
 
     """
             P  = Total number of positives

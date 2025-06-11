@@ -66,3 +66,10 @@ function_name_raw_to_num = {
     "integration and excision": 10,
     "unknown_no_hit": 11,
 }
+
+type_to_num = {
+    "phage": 0,
+    "PICI": 1,
+    "CFPICI": 2,
+    "P4": 3,
+}
