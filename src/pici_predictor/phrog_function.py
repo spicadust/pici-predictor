@@ -12,7 +12,7 @@ function_names_raw = [
     "unknown function",
 ]
 
-function_names = [
+function_names_formatted = [
     "lysis",
     "tail",
     "connector",
@@ -26,7 +26,7 @@ function_names = [
     "no_hit",
 ]
 
-function_name_conversion = {
+function_name_raw_to_formatted = {
     "DNA, RNA and nucleotide metabolism": "dna_rna_and_nucleotide_metabolism",
     "head and packaging": "head_and_packaging",
     "transcription regulation": "transcription_regulation",
@@ -40,7 +40,7 @@ function_name_conversion = {
     "other": "other",
 }
 
-function_abbreviation = {
+function_name_raw_to_abbreviation = {
     "lysis": "lysis",
     "tail": "tail",
     "connector": "conn",
@@ -53,7 +53,7 @@ function_abbreviation = {
     "unknown_no_hit": "no_hit",
 }
 
-function_to_num = {
+function_name_raw_to_num = {
     "lysis": 1,
     "tail": 2,
     "connector": 3,
