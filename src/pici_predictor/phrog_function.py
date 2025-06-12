@@ -67,6 +67,32 @@ function_name_raw_to_num = {
     "unknown_no_hit": 11,
 }
 
+thresholds_optimal = {
+    "lysis": 0.06,
+    "tail": 0.03,
+    "connector": 0.03,
+    "dna_rna_and_nucleotide_metabolism": 0.04,
+    "head_and_packaging": 0.01,
+    "other": 0.01,
+    "transcription_regulation": 0.01,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.01,
+    "unknown_function": 0.29,
+    "integration_and_excision": 0.23,
+}
+
+thresholds_0_5 = {
+    "lysis": 0.5,
+    "tail": 0.5,
+    "connector": 0.5,
+    "dna_rna_and_nucleotide_metabolism": 0.5,
+    "head_and_packaging": 0.5,
+    "other": 0.5,
+    "transcription_regulation": 0.5,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.5,
+    "unknown_function": 0.5,
+    "integration_and_excision": 0.5,
+}
+
 type_to_num = {
     "phage": 0,
     "PICI": 1,
