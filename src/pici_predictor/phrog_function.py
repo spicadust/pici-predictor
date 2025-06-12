@@ -67,6 +67,20 @@ function_name_raw_to_num = {
     "unknown_no_hit": 11,
 }
 
+function_name_formatted_to_num = {
+    "lysis": 1,
+    "tail": 2,
+    "connector": 3,
+    "dna_rna_and_nucleotide_metabolism": 4,
+    "head_and_packaging": 5,
+    "other": 6,
+    "transcription_regulation": 7,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 8,
+    "unknown_function": 9,
+    "integration_and_excision": 10,
+    "no_hit": 11,
+}
+
 thresholds_optimal = {
     "lysis": 0.06,
     "tail": 0.03,
@@ -78,6 +92,21 @@ thresholds_optimal = {
     "moron_auxiliary_metabolic_gene_and_host_takeover": 0.01,
     "unknown_function": 0.29,
     "integration_and_excision": 0.23,
+}
+
+function_colors = {
+    # using formatted function names
+    "lysis": "#f35f49",
+    "tail": "#07e9a2",
+    "connector": "#35d7ff",
+    "dna_rna_and_nucleotide_metabolism": "#ffdf59",
+    "head_and_packaging": "#3e83f6",
+    "other": "#838383",
+    "transcription_regulation": "#a861e3",
+    "moron_auxiliary_metabolic_gene_and_host_takeover": "#ff59f5",
+    "unknown_function": "#313131",  # dark grey
+    "integration_and_excision": "#fea328",
+    "no_hit": "#f5f5f5",  # light grey
 }
 
 thresholds_0_5 = {
@@ -93,6 +122,34 @@ thresholds_0_5 = {
     "integration_and_excision": 0.5,
 }
 
+# z-score params
+mu_neg_dict = {
+    "lysis": 0.00064970204,
+    "tail": 7.0620925e-05,
+    "connector": 5.0706547e-07,
+    "dna_rna_and_nucleotide_metabolism": 0.85884595,
+    "head_and_packaging": 0.00034330788,
+    "other": 6.0434857e-05,
+    "transcription_regulation": 4.5458604e-10,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.040228892,
+    "unknown_function": 0.0011214364,
+    "integration_and_excision": 2.400698e-05,
+}
+
+sigma_neg_dict = {
+    "lysis": 0.00022949721,
+    "tail": 1.9761694e-05,
+    "connector": 1.7011082e-07,
+    "dna_rna_and_nucleotide_metabolism": 0.044518474,
+    "head_and_packaging": 0.00016175798,
+    "other": 3.049463e-05,
+    "transcription_regulation": 2.1637066e-10,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.009698894,
+    "unknown_function": 0.00057164463,
+    "integration_and_excision": 1.7930515e-05,
+}
+
+# pici types
 type_to_num = {
     "phage": 0,
     "PICI": 1,
