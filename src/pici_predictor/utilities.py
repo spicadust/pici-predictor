@@ -187,6 +187,15 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     import numpy as np
     import pandas as pd
 
+    """
+    Discover PICI segments in a genome.
+
+    Args:
+        data_dir (str): dataset directory
+        results_dir (str): results directory
+        model_function_path (str): folder directory for function prediction
+        model_pici_path (str): file directory for PICI prediction
+    """
     fasta_dir = os.path.join(data_dir, "protein.faa")
     gff_dir = os.path.join(data_dir, "genomic.gff")
     feature_out_dir = os.path.join(data_dir, "features.pa")
@@ -194,7 +203,7 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     predicted_prob_out_dir = os.path.join(results_dir, "predicted_prob.csv")
     predicted_function_out_dir = os.path.join(results_dir, "predicted_function.csv")
     pici_out_dir = os.path.join(results_dir, "pici_df.csv")
-
+    img_dir = results_dir
     # Generate features
     feature_df = feature_generation(fasta_dir, feature_out_dir)
     # Parse GFF
@@ -271,6 +280,138 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     results = pd.concat([forward_results, reverse_results])
     results.to_csv(pici_out_dir, index=False)
 
+    print(results["predicted_class_name"].value_counts())
+
+    # prepare predicted segments
+    def prepare_predicted_segments(results, function_vector, window_size, type):
+        N = len(function_vector)
+        segments = []
+
+        # Forward direction
+        forward_results = results[results["forward"]]
+        for idx in forward_results[
+            forward_results["predicted_class_name"] == type
+        ].index:
+            start_idx = idx
+            end_idx = idx + window_size - 1
+            if end_idx >= N:
+                continue  # skip if window exceeds genome
+            segment = {
+                "function_vector": function_vector[
+                    start_idx : end_idx + 1
+                ].tolist(),  # forward order
+                "start_idx": start_idx,
+                "end_idx": end_idx,
+                "forward": True,
+                "predicted_type": type,
+                "predicted_prob": forward_results.loc[idx, "prob_class_1"],
+            }
+            segments.append(segment)
+
+        # Reverse direction
+        reverse_results = results[~results["forward"]]
+        for rev_idx in reverse_results[
+            reverse_results["predicted_class_name"] == type
+        ].index:
+            # Map reversed window to forward indices
+            start_idx = N - rev_idx - 1
+            end_idx = N - (rev_idx + window_size)
+            if end_idx < 0 or start_idx >= N:
+                continue  # skip if window exceeds genome
+            # Store function_vector in window order (decreasing index)
+            func_vec = function_vector[start_idx : end_idx - 1 : -1].tolist()  # step -1
+            segment = {
+                "function_vector": func_vec,
+                "start_idx": start_idx,
+                "end_idx": end_idx,
+                "forward": False,
+                "predicted_type": type,
+                "predicted_prob": reverse_results.loc[rev_idx, "prob_class_1"],
+            }
+            segments.append(segment)
+        segments_df = pd.DataFrame(segments)
+        if len(segments_df) == 0:
+            # Return empty DataFrame with correct columns
+            return pd.DataFrame(
+                columns=[
+                    "function_vector",
+                    "start_idx",
+                    "end_idx",
+                    "forward",
+                    "predicted_type",
+                    "predicted_prob",
+                ]
+            )
+        segments_df = segments_df.sort_values("start_idx")
+        return segments_df
+
+    pici_segments = {}
+    for type in ["PICI", "CFPICI", "P4"]:
+        pici_segments[type] = prepare_predicted_segments(
+            results, function_vector, 30, type
+        )
+
+    # visualization
+    def plot_pici_segments_heatmap(pici_segments, function_vector, img_dir, type):
+        import matplotlib.pyplot as plt
+        from matplotlib.colors import ListedColormap
+        from pici_predictor.phrog_function import function_num_to_color
+        import os
+
+        # Prepare data
+        heatmap_data = np.array(pici_segments["function_vector"].tolist())
+        labels = [
+            f"proba={row.predicted_prob:.3f}, pos:({row.start_idx}-{row.end_idx}), {'reverse' if not row.forward else 'forward'}"
+            for _, row in pici_segments.iterrows()
+        ]
+
+        # Create colormap
+        function_nums_sorted = sorted(function_num_to_color.keys())
+        color_list = [function_num_to_color[num] for num in function_nums_sorted]
+        cmap = ListedColormap(color_list)
+        num_to_idx = {num: i for i, num in enumerate(function_nums_sorted)}
+        heatmap_indices = np.vectorize(num_to_idx.get)(heatmap_data)
+
+        # Create plot
+        fig, ax = plt.subplots(figsize=(5, len(heatmap_indices) * 0.2))
+        im = ax.imshow(heatmap_indices, aspect="auto", cmap=cmap)
+
+        # Remove axes, ticks, and margins
+        ax.axis("off")
+        plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
+        plt.margins(0, 0)
+        plt.gca().xaxis.set_major_locator(plt.NullLocator())
+        plt.gca().yaxis.set_major_locator(plt.NullLocator())
+
+        # Add labels as text
+        for i, label in enumerate(labels):
+            ax.text(
+                heatmap_indices.shape[1]
+                + 0.5,  # x position (just to the right of the heatmap)
+                i,  # y position (row)
+                label,
+                va="center",
+                ha="left",
+                fontsize=9,
+                color="black",
+            )
+        plt.title(f"{type}")
+        # Save plot
+        os.makedirs(img_dir, exist_ok=True)
+        plt.savefig(
+            os.path.join(img_dir, f"heatmap_{type}.png"),
+            bbox_inches="tight",
+            pad_inches=0,
+            dpi=300,
+        )
+        # plt.close()
+
+    for type in ["PICI", "CFPICI", "P4"]:
+        if len(pici_segments[type]) > 0:
+            plot_pici_segments_heatmap(
+                pici_segments[type], function_vector, img_dir, type
+            )
+
     # check
     # print(feature_df.head())
     # print(feature_df.shape)
@@ -283,4 +424,4 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     # print(predicted_function.shape)
     # print(merged.head())
     # print(merged.shape)
-    return results
+    return pici_segments
