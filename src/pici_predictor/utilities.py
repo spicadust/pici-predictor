@@ -304,7 +304,7 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
                 "end_idx": end_idx,
                 "forward": True,
                 "predicted_type": type,
-                "predicted_prob": forward_results.loc[idx, "prob_class_1"],
+                "predicted_prob": forward_results.loc[idx, "max_probability"],
             }
             segments.append(segment)
 
@@ -326,7 +326,7 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
                 "end_idx": end_idx,
                 "forward": False,
                 "predicted_type": type,
-                "predicted_prob": reverse_results.loc[rev_idx, "prob_class_1"],
+                "predicted_prob": reverse_results.loc[rev_idx, "max_probability"],
             }
             segments.append(segment)
         segments_df = pd.DataFrame(segments)
