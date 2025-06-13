@@ -109,6 +109,21 @@ function_colors = {
     "no_hit": "#f5f5f5",  # light grey
 }
 
+function_num_to_color = {
+    1: "#f35f49",
+    2: "#07e9a2",
+    3: "#35d7ff",
+    4: "#ffdf59",
+    5: "#3e83f6",
+    6: "#838383",
+    7: "#a861e3",
+    8: "#ff59f5",
+    9: "#313131",
+    10: "#fea328",
+    11: "#f5f5f5",
+}
+
+
 thresholds_0_5 = {
     "lysis": 0.5,
     "tail": 0.5,
