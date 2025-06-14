@@ -81,18 +81,6 @@ function_name_formatted_to_num = {
     "no_hit": 11,
 }
 
-thresholds_optimal = {
-    "lysis": 0.06,
-    "tail": 0.03,
-    "connector": 0.03,
-    "dna_rna_and_nucleotide_metabolism": 0.04,
-    "head_and_packaging": 0.01,
-    "other": 0.01,
-    "transcription_regulation": 0.01,
-    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.01,
-    "unknown_function": 0.29,
-    "integration_and_excision": 0.23,
-}
 
 function_colors = {
     # using formatted function names
@@ -123,6 +111,18 @@ function_num_to_color = {
     11: "#f5f5f5",
 }
 
+thresholds_optimal = {
+    "lysis": 0.06,
+    "tail": 0.03,
+    "connector": 0.03,
+    "dna_rna_and_nucleotide_metabolism": 0.04,
+    "head_and_packaging": 0.01,
+    "other": 0.01,
+    "transcription_regulation": 0.01,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.01,
+    "unknown_function": 0.29,
+    "integration_and_excision": 0.23,
+}
 
 thresholds_0_5 = {
     "lysis": 0.5,
@@ -135,6 +135,32 @@ thresholds_0_5 = {
     "moron_auxiliary_metabolic_gene_and_host_takeover": 0.5,
     "unknown_function": 0.5,
     "integration_and_excision": 0.5,
+}
+
+thresholds_0_3 = {
+    "lysis": 0.3,
+    "tail": 0.3,
+    "connector": 0.3,
+    "dna_rna_and_nucleotide_metabolism": 0.3,
+    "head_and_packaging": 0.3,
+    "other": 0.3,
+    "transcription_regulation": 0.3,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.3,
+    "unknown_function": 0.3,
+    "integration_and_excision": 0.3,
+}
+
+thresholds_a = {
+    "lysis": 0.05,
+    "tail": 0.05,
+    "connector": 0.1,
+    "dna_rna_and_nucleotide_metabolism": 0.3,
+    "head_and_packaging": 0.05,
+    "other": 0.3,
+    "transcription_regulation": 0.1,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.99,
+    "unknown_function": 0.7,
+    "integration_and_excision": 0.05,
 }
 
 # z-score params
