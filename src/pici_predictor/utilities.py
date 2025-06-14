@@ -171,7 +171,7 @@ def assign_functions(
     return predicted_probs[["id", "function", "function_num"]]
 
 
-def window_vector(vec, window_size=30, step_size=1):
+def window_vector(vec, window_size=20, step_size=1):
     import numpy as np
 
     windows = []
@@ -238,12 +238,12 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
 
     # Forward windows
     forward_windows, forward_indices = window_vector(
-        function_vector, window_size=30, step_size=1
+        function_vector, window_size=20, step_size=1
     )
     # Reverse windows
     reverse_vector = function_vector[::-1]
     reverse_windows, reverse_indices = window_vector(
-        reverse_vector, window_size=30, step_size=1
+        reverse_vector, window_size=20, step_size=1
     )
 
     def predict_pici_segments(windows, model_path, threshold=0.4, class_names=None):

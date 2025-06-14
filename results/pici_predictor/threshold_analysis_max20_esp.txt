@@ -1,0 +1,2597 @@
+Threshold Analysis Results
+=======================
+
+Best Thresholds by Class:
+
+phage:
+Best threshold: 0.01
+Best MCC: 1.0000
+
+PICI:
+Best threshold: 0.67
+Best MCC: 0.9799
+
+CFPICI:
+Best threshold: 0.01
+Best MCC: 0.9915
+
+P4:
+Best threshold: 0.01
+Best MCC: 0.9884
+
+
+Detailed Results by Threshold:
+
+Threshold: 0.01
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.02
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.03
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.04
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.05
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.06
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.07
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.08
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.09
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.10
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.11
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.12
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.13
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.14
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.15
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.16
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.17
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.18
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.19
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.20
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.21
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.22
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.23
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.24
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.25
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.26
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.27
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.28
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.29
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.30
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.31
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.32
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.33
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.34
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.35
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.36
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.37
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.38
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.39
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.40
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.41
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.42
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.43
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.44
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.45
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.46
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.47
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.48
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.49
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.50
+phage:
+MCC: 1.0000
+Precision: 1.0000
+Recall: 1.0000
+F1-score: 1.0000
+Metrics: P: 5_192 Tp: 5_192 Fp: 0 N: 890 Tn: 890 Fn: 0
+PICI:
+MCC: 0.9783
+Precision: 0.9693
+Recall: 0.9895
+F1-score: 0.9793
+Metrics: P: 287 Tp: 284 Fp: 9 N: 5_795 Tn: 5_786 Fn: 3
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.51
+phage:
+MCC: 0.9993
+Precision: 0.9998
+Recall: 1.0000
+F1-score: 0.9999
+Metrics: P: 5_192 Tp: 5_192 Fp: 1 N: 890 Tn: 889 Fn: 0
+PICI:
+MCC: 0.9765
+Precision: 0.9692
+Recall: 0.9861
+F1-score: 0.9775
+Metrics: P: 287 Tp: 283 Fp: 9 N: 5_795 Tn: 5_786 Fn: 4
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.52
+phage:
+MCC: 0.9993
+Precision: 0.9998
+Recall: 1.0000
+F1-score: 0.9999
+Metrics: P: 5_192 Tp: 5_192 Fp: 1 N: 890 Tn: 889 Fn: 0
+PICI:
+MCC: 0.9765
+Precision: 0.9692
+Recall: 0.9861
+F1-score: 0.9775
+Metrics: P: 287 Tp: 283 Fp: 9 N: 5_795 Tn: 5_786 Fn: 4
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.53
+phage:
+MCC: 0.9993
+Precision: 0.9998
+Recall: 1.0000
+F1-score: 0.9999
+Metrics: P: 5_192 Tp: 5_192 Fp: 1 N: 890 Tn: 889 Fn: 0
+PICI:
+MCC: 0.9765
+Precision: 0.9692
+Recall: 0.9861
+F1-score: 0.9775
+Metrics: P: 287 Tp: 283 Fp: 9 N: 5_795 Tn: 5_786 Fn: 4
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.54
+phage:
+MCC: 0.9993
+Precision: 0.9998
+Recall: 1.0000
+F1-score: 0.9999
+Metrics: P: 5_192 Tp: 5_192 Fp: 1 N: 890 Tn: 889 Fn: 0
+PICI:
+MCC: 0.9765
+Precision: 0.9692
+Recall: 0.9861
+F1-score: 0.9775
+Metrics: P: 287 Tp: 283 Fp: 9 N: 5_795 Tn: 5_786 Fn: 4
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.55
+phage:
+MCC: 0.9987
+Precision: 0.9996
+Recall: 1.0000
+F1-score: 0.9998
+Metrics: P: 5_192 Tp: 5_192 Fp: 2 N: 890 Tn: 888 Fn: 0
+PICI:
+MCC: 0.9746
+Precision: 0.9691
+Recall: 0.9826
+F1-score: 0.9758
+Metrics: P: 287 Tp: 282 Fp: 9 N: 5_795 Tn: 5_786 Fn: 5
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9884
+Precision: 0.9952
+Recall: 0.9833
+F1-score: 0.9892
+Metrics: P: 420 Tp: 413 Fp: 2 N: 5_662 Tn: 5_660 Fn: 7
+
+Threshold: 0.56
+phage:
+MCC: 0.9980
+Precision: 0.9994
+Recall: 1.0000
+F1-score: 0.9997
+Metrics: P: 5_192 Tp: 5_192 Fp: 3 N: 890 Tn: 887 Fn: 0
+PICI:
+MCC: 0.9746
+Precision: 0.9691
+Recall: 0.9826
+F1-score: 0.9758
+Metrics: P: 287 Tp: 282 Fp: 9 N: 5_795 Tn: 5_786 Fn: 5
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9872
+Precision: 0.9952
+Recall: 0.9810
+F1-score: 0.9880
+Metrics: P: 420 Tp: 412 Fp: 2 N: 5_662 Tn: 5_660 Fn: 8
+
+Threshold: 0.57
+phage:
+MCC: 0.9980
+Precision: 0.9994
+Recall: 1.0000
+F1-score: 0.9997
+Metrics: P: 5_192 Tp: 5_192 Fp: 3 N: 890 Tn: 887 Fn: 0
+PICI:
+MCC: 0.9746
+Precision: 0.9691
+Recall: 0.9826
+F1-score: 0.9758
+Metrics: P: 287 Tp: 282 Fp: 9 N: 5_795 Tn: 5_786 Fn: 5
+CFPICI:
+MCC: 0.9915
+Precision: 0.9945
+Recall: 0.9891
+F1-score: 0.9918
+Metrics: P: 183 Tp: 181 Fp: 1 N: 5_899 Tn: 5_898 Fn: 2
+P4:
+MCC: 0.9872
+Precision: 0.9952
+Recall: 0.9810
+F1-score: 0.9880
+Metrics: P: 420 Tp: 412 Fp: 2 N: 5_662 Tn: 5_660 Fn: 8
+
+Threshold: 0.58
+phage:
+MCC: 0.9974
+Precision: 0.9992
+Recall: 1.0000
+F1-score: 0.9996
+Metrics: P: 5_192 Tp: 5_192 Fp: 4 N: 890 Tn: 886 Fn: 0
+PICI:
+MCC: 0.9746
+Precision: 0.9691
+Recall: 0.9826
+F1-score: 0.9758
+Metrics: P: 287 Tp: 282 Fp: 9 N: 5_795 Tn: 5_786 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 0.9952
+Recall: 0.9810
+F1-score: 0.9880
+Metrics: P: 420 Tp: 412 Fp: 2 N: 5_662 Tn: 5_660 Fn: 8
+
+Threshold: 0.59
+phage:
+MCC: 0.9967
+Precision: 0.9990
+Recall: 1.0000
+F1-score: 0.9995
+Metrics: P: 5_192 Tp: 5_192 Fp: 5 N: 890 Tn: 885 Fn: 0
+PICI:
+MCC: 0.9746
+Precision: 0.9691
+Recall: 0.9826
+F1-score: 0.9758
+Metrics: P: 287 Tp: 282 Fp: 9 N: 5_795 Tn: 5_786 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9859
+Precision: 0.9952
+Recall: 0.9786
+F1-score: 0.9868
+Metrics: P: 420 Tp: 411 Fp: 2 N: 5_662 Tn: 5_660 Fn: 9
+
+Threshold: 0.60
+phage:
+MCC: 0.9960
+Precision: 0.9988
+Recall: 1.0000
+F1-score: 0.9994
+Metrics: P: 5_192 Tp: 5_192 Fp: 6 N: 890 Tn: 884 Fn: 0
+PICI:
+MCC: 0.9764
+Precision: 0.9724
+Recall: 0.9826
+F1-score: 0.9775
+Metrics: P: 287 Tp: 282 Fp: 8 N: 5_795 Tn: 5_787 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9859
+Precision: 0.9952
+Recall: 0.9786
+F1-score: 0.9868
+Metrics: P: 420 Tp: 411 Fp: 2 N: 5_662 Tn: 5_660 Fn: 9
+
+Threshold: 0.61
+phage:
+MCC: 0.9960
+Precision: 0.9988
+Recall: 1.0000
+F1-score: 0.9994
+Metrics: P: 5_192 Tp: 5_192 Fp: 6 N: 890 Tn: 884 Fn: 0
+PICI:
+MCC: 0.9764
+Precision: 0.9724
+Recall: 0.9826
+F1-score: 0.9775
+Metrics: P: 287 Tp: 282 Fp: 8 N: 5_795 Tn: 5_787 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9859
+Precision: 0.9952
+Recall: 0.9786
+F1-score: 0.9868
+Metrics: P: 420 Tp: 411 Fp: 2 N: 5_662 Tn: 5_660 Fn: 9
+
+Threshold: 0.62
+phage:
+MCC: 0.9960
+Precision: 0.9988
+Recall: 1.0000
+F1-score: 0.9994
+Metrics: P: 5_192 Tp: 5_192 Fp: 6 N: 890 Tn: 884 Fn: 0
+PICI:
+MCC: 0.9764
+Precision: 0.9724
+Recall: 0.9826
+F1-score: 0.9775
+Metrics: P: 287 Tp: 282 Fp: 8 N: 5_795 Tn: 5_787 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9859
+Precision: 0.9952
+Recall: 0.9786
+F1-score: 0.9868
+Metrics: P: 420 Tp: 411 Fp: 2 N: 5_662 Tn: 5_660 Fn: 9
+
+Threshold: 0.63
+phage:
+MCC: 0.9947
+Precision: 0.9985
+Recall: 1.0000
+F1-score: 0.9992
+Metrics: P: 5_192 Tp: 5_192 Fp: 8 N: 890 Tn: 882 Fn: 0
+PICI:
+MCC: 0.9781
+Precision: 0.9758
+Recall: 0.9826
+F1-score: 0.9792
+Metrics: P: 287 Tp: 282 Fp: 7 N: 5_795 Tn: 5_788 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 0.9976
+Recall: 0.9786
+F1-score: 0.9880
+Metrics: P: 420 Tp: 411 Fp: 1 N: 5_662 Tn: 5_661 Fn: 9
+
+Threshold: 0.64
+phage:
+MCC: 0.9941
+Precision: 0.9983
+Recall: 1.0000
+F1-score: 0.9991
+Metrics: P: 5_192 Tp: 5_192 Fp: 9 N: 890 Tn: 881 Fn: 0
+PICI:
+MCC: 0.9781
+Precision: 0.9758
+Recall: 0.9826
+F1-score: 0.9792
+Metrics: P: 287 Tp: 282 Fp: 7 N: 5_795 Tn: 5_788 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9884
+Precision: 1.0000
+Recall: 0.9786
+F1-score: 0.9892
+Metrics: P: 420 Tp: 411 Fp: 0 N: 5_662 Tn: 5_662 Fn: 9
+
+Threshold: 0.65
+phage:
+MCC: 0.9934
+Precision: 0.9981
+Recall: 1.0000
+F1-score: 0.9990
+Metrics: P: 5_192 Tp: 5_192 Fp: 10 N: 890 Tn: 880 Fn: 0
+PICI:
+MCC: 0.9781
+Precision: 0.9758
+Recall: 0.9826
+F1-score: 0.9792
+Metrics: P: 287 Tp: 282 Fp: 7 N: 5_795 Tn: 5_788 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.66
+phage:
+MCC: 0.9934
+Precision: 0.9981
+Recall: 1.0000
+F1-score: 0.9990
+Metrics: P: 5_192 Tp: 5_192 Fp: 10 N: 890 Tn: 880 Fn: 0
+PICI:
+MCC: 0.9781
+Precision: 0.9758
+Recall: 0.9826
+F1-score: 0.9792
+Metrics: P: 287 Tp: 282 Fp: 7 N: 5_795 Tn: 5_788 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.67
+phage:
+MCC: 0.9927
+Precision: 0.9979
+Recall: 1.0000
+F1-score: 0.9989
+Metrics: P: 5_192 Tp: 5_192 Fp: 11 N: 890 Tn: 879 Fn: 0
+PICI:
+MCC: 0.9799
+Precision: 0.9792
+Recall: 0.9826
+F1-score: 0.9809
+Metrics: P: 287 Tp: 282 Fp: 6 N: 5_795 Tn: 5_789 Fn: 5
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.68
+phage:
+MCC: 0.9921
+Precision: 0.9977
+Recall: 1.0000
+F1-score: 0.9988
+Metrics: P: 5_192 Tp: 5_192 Fp: 12 N: 890 Tn: 878 Fn: 0
+PICI:
+MCC: 0.9781
+Precision: 0.9791
+Recall: 0.9791
+F1-score: 0.9791
+Metrics: P: 287 Tp: 281 Fp: 6 N: 5_795 Tn: 5_789 Fn: 6
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.69
+phage:
+MCC: 0.9914
+Precision: 0.9975
+Recall: 1.0000
+F1-score: 0.9987
+Metrics: P: 5_192 Tp: 5_192 Fp: 13 N: 890 Tn: 877 Fn: 0
+PICI:
+MCC: 0.9762
+Precision: 0.9790
+Recall: 0.9756
+F1-score: 0.9773
+Metrics: P: 287 Tp: 280 Fp: 6 N: 5_795 Tn: 5_789 Fn: 7
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.70
+phage:
+MCC: 0.9914
+Precision: 0.9975
+Recall: 1.0000
+F1-score: 0.9987
+Metrics: P: 5_192 Tp: 5_192 Fp: 13 N: 890 Tn: 877 Fn: 0
+PICI:
+MCC: 0.9762
+Precision: 0.9790
+Recall: 0.9756
+F1-score: 0.9773
+Metrics: P: 287 Tp: 280 Fp: 6 N: 5_795 Tn: 5_789 Fn: 7
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.71
+phage:
+MCC: 0.9914
+Precision: 0.9975
+Recall: 1.0000
+F1-score: 0.9987
+Metrics: P: 5_192 Tp: 5_192 Fp: 13 N: 890 Tn: 877 Fn: 0
+PICI:
+MCC: 0.9762
+Precision: 0.9790
+Recall: 0.9756
+F1-score: 0.9773
+Metrics: P: 287 Tp: 280 Fp: 6 N: 5_795 Tn: 5_789 Fn: 7
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.72
+phage:
+MCC: 0.9914
+Precision: 0.9975
+Recall: 1.0000
+F1-score: 0.9987
+Metrics: P: 5_192 Tp: 5_192 Fp: 13 N: 890 Tn: 877 Fn: 0
+PICI:
+MCC: 0.9762
+Precision: 0.9790
+Recall: 0.9756
+F1-score: 0.9773
+Metrics: P: 287 Tp: 280 Fp: 6 N: 5_795 Tn: 5_789 Fn: 7
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9872
+Precision: 1.0000
+Recall: 0.9762
+F1-score: 0.9880
+Metrics: P: 420 Tp: 410 Fp: 0 N: 5_662 Tn: 5_662 Fn: 10
+
+Threshold: 0.73
+phage:
+MCC: 0.9901
+Precision: 0.9971
+Recall: 1.0000
+F1-score: 0.9986
+Metrics: P: 5_192 Tp: 5_192 Fp: 15 N: 890 Tn: 875 Fn: 0
+PICI:
+MCC: 0.9743
+Precision: 0.9789
+Recall: 0.9721
+F1-score: 0.9755
+Metrics: P: 287 Tp: 279 Fp: 6 N: 5_795 Tn: 5_789 Fn: 8
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9859
+Precision: 1.0000
+Recall: 0.9738
+F1-score: 0.9867
+Metrics: P: 420 Tp: 409 Fp: 0 N: 5_662 Tn: 5_662 Fn: 11
+
+Threshold: 0.74
+phage:
+MCC: 0.9894
+Precision: 0.9969
+Recall: 1.0000
+F1-score: 0.9985
+Metrics: P: 5_192 Tp: 5_192 Fp: 16 N: 890 Tn: 874 Fn: 0
+PICI:
+MCC: 0.9743
+Precision: 0.9789
+Recall: 0.9721
+F1-score: 0.9755
+Metrics: P: 287 Tp: 279 Fp: 6 N: 5_795 Tn: 5_789 Fn: 8
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.75
+phage:
+MCC: 0.9888
+Precision: 0.9967
+Recall: 1.0000
+F1-score: 0.9984
+Metrics: P: 5_192 Tp: 5_192 Fp: 17 N: 890 Tn: 873 Fn: 0
+PICI:
+MCC: 0.9725
+Precision: 0.9789
+Recall: 0.9686
+F1-score: 0.9737
+Metrics: P: 287 Tp: 278 Fp: 6 N: 5_795 Tn: 5_789 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.76
+phage:
+MCC: 0.9881
+Precision: 0.9965
+Recall: 1.0000
+F1-score: 0.9983
+Metrics: P: 5_192 Tp: 5_192 Fp: 18 N: 890 Tn: 872 Fn: 0
+PICI:
+MCC: 0.9743
+Precision: 0.9823
+Recall: 0.9686
+F1-score: 0.9754
+Metrics: P: 287 Tp: 278 Fp: 5 N: 5_795 Tn: 5_790 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.77
+phage:
+MCC: 0.9875
+Precision: 0.9964
+Recall: 1.0000
+F1-score: 0.9982
+Metrics: P: 5_192 Tp: 5_192 Fp: 19 N: 890 Tn: 871 Fn: 0
+PICI:
+MCC: 0.9761
+Precision: 0.9858
+Recall: 0.9686
+F1-score: 0.9772
+Metrics: P: 287 Tp: 278 Fp: 4 N: 5_795 Tn: 5_791 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.78
+phage:
+MCC: 0.9875
+Precision: 0.9964
+Recall: 1.0000
+F1-score: 0.9982
+Metrics: P: 5_192 Tp: 5_192 Fp: 19 N: 890 Tn: 871 Fn: 0
+PICI:
+MCC: 0.9761
+Precision: 0.9858
+Recall: 0.9686
+F1-score: 0.9772
+Metrics: P: 287 Tp: 278 Fp: 4 N: 5_795 Tn: 5_791 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.79
+phage:
+MCC: 0.9875
+Precision: 0.9964
+Recall: 1.0000
+F1-score: 0.9982
+Metrics: P: 5_192 Tp: 5_192 Fp: 19 N: 890 Tn: 871 Fn: 0
+PICI:
+MCC: 0.9761
+Precision: 0.9858
+Recall: 0.9686
+F1-score: 0.9772
+Metrics: P: 287 Tp: 278 Fp: 4 N: 5_795 Tn: 5_791 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.80
+phage:
+MCC: 0.9868
+Precision: 0.9962
+Recall: 1.0000
+F1-score: 0.9981
+Metrics: P: 5_192 Tp: 5_192 Fp: 20 N: 890 Tn: 870 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.81
+phage:
+MCC: 0.9868
+Precision: 0.9962
+Recall: 1.0000
+F1-score: 0.9981
+Metrics: P: 5_192 Tp: 5_192 Fp: 20 N: 890 Tn: 870 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.82
+phage:
+MCC: 0.9868
+Precision: 0.9962
+Recall: 1.0000
+F1-score: 0.9981
+Metrics: P: 5_192 Tp: 5_192 Fp: 20 N: 890 Tn: 870 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 0.9945
+Recall: 0.9836
+F1-score: 0.9890
+Metrics: P: 183 Tp: 180 Fp: 1 N: 5_899 Tn: 5_898 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.83
+phage:
+MCC: 0.9861
+Precision: 0.9960
+Recall: 1.0000
+F1-score: 0.9980
+Metrics: P: 5_192 Tp: 5_192 Fp: 21 N: 890 Tn: 869 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9915
+Precision: 1.0000
+Recall: 0.9836
+F1-score: 0.9917
+Metrics: P: 183 Tp: 180 Fp: 0 N: 5_899 Tn: 5_899 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.84
+phage:
+MCC: 0.9861
+Precision: 0.9960
+Recall: 1.0000
+F1-score: 0.9980
+Metrics: P: 5_192 Tp: 5_192 Fp: 21 N: 890 Tn: 869 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9915
+Precision: 1.0000
+Recall: 0.9836
+F1-score: 0.9917
+Metrics: P: 183 Tp: 180 Fp: 0 N: 5_899 Tn: 5_899 Fn: 3
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.85
+phage:
+MCC: 0.9855
+Precision: 0.9958
+Recall: 1.0000
+F1-score: 0.9979
+Metrics: P: 5_192 Tp: 5_192 Fp: 22 N: 890 Tn: 868 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 1.0000
+Recall: 0.9781
+F1-score: 0.9890
+Metrics: P: 183 Tp: 179 Fp: 0 N: 5_899 Tn: 5_899 Fn: 4
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.86
+phage:
+MCC: 0.9855
+Precision: 0.9958
+Recall: 1.0000
+F1-score: 0.9979
+Metrics: P: 5_192 Tp: 5_192 Fp: 22 N: 890 Tn: 868 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 1.0000
+Recall: 0.9781
+F1-score: 0.9890
+Metrics: P: 183 Tp: 179 Fp: 0 N: 5_899 Tn: 5_899 Fn: 4
+P4:
+MCC: 0.9846
+Precision: 1.0000
+Recall: 0.9714
+F1-score: 0.9855
+Metrics: P: 420 Tp: 408 Fp: 0 N: 5_662 Tn: 5_662 Fn: 12
+
+Threshold: 0.87
+phage:
+MCC: 0.9848
+Precision: 0.9956
+Recall: 1.0000
+F1-score: 0.9978
+Metrics: P: 5_192 Tp: 5_192 Fp: 23 N: 890 Tn: 867 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 1.0000
+Recall: 0.9781
+F1-score: 0.9890
+Metrics: P: 183 Tp: 179 Fp: 0 N: 5_899 Tn: 5_899 Fn: 4
+P4:
+MCC: 0.9833
+Precision: 1.0000
+Recall: 0.9690
+F1-score: 0.9843
+Metrics: P: 420 Tp: 407 Fp: 0 N: 5_662 Tn: 5_662 Fn: 13
+
+Threshold: 0.88
+phage:
+MCC: 0.9842
+Precision: 0.9954
+Recall: 1.0000
+F1-score: 0.9977
+Metrics: P: 5_192 Tp: 5_192 Fp: 24 N: 890 Tn: 866 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 1.0000
+Recall: 0.9781
+F1-score: 0.9890
+Metrics: P: 183 Tp: 179 Fp: 0 N: 5_899 Tn: 5_899 Fn: 4
+P4:
+MCC: 0.9820
+Precision: 1.0000
+Recall: 0.9667
+F1-score: 0.9831
+Metrics: P: 420 Tp: 406 Fp: 0 N: 5_662 Tn: 5_662 Fn: 14
+
+Threshold: 0.89
+phage:
+MCC: 0.9842
+Precision: 0.9954
+Recall: 1.0000
+F1-score: 0.9977
+Metrics: P: 5_192 Tp: 5_192 Fp: 24 N: 890 Tn: 866 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9887
+Precision: 1.0000
+Recall: 0.9781
+F1-score: 0.9890
+Metrics: P: 183 Tp: 179 Fp: 0 N: 5_899 Tn: 5_899 Fn: 4
+P4:
+MCC: 0.9820
+Precision: 1.0000
+Recall: 0.9667
+F1-score: 0.9831
+Metrics: P: 420 Tp: 406 Fp: 0 N: 5_662 Tn: 5_662 Fn: 14
+
+Threshold: 0.90
+phage:
+MCC: 0.9828
+Precision: 0.9950
+Recall: 1.0000
+F1-score: 0.9975
+Metrics: P: 5_192 Tp: 5_192 Fp: 26 N: 890 Tn: 864 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9858
+Precision: 1.0000
+Recall: 0.9727
+F1-score: 0.9861
+Metrics: P: 183 Tp: 178 Fp: 0 N: 5_899 Tn: 5_899 Fn: 5
+P4:
+MCC: 0.9807
+Precision: 1.0000
+Recall: 0.9643
+F1-score: 0.9818
+Metrics: P: 420 Tp: 405 Fp: 0 N: 5_662 Tn: 5_662 Fn: 15
+
+Threshold: 0.91
+phage:
+MCC: 0.9815
+Precision: 0.9946
+Recall: 1.0000
+F1-score: 0.9973
+Metrics: P: 5_192 Tp: 5_192 Fp: 28 N: 890 Tn: 862 Fn: 0
+PICI:
+MCC: 0.9779
+Precision: 0.9893
+Recall: 0.9686
+F1-score: 0.9789
+Metrics: P: 287 Tp: 278 Fp: 3 N: 5_795 Tn: 5_792 Fn: 9
+CFPICI:
+MCC: 0.9830
+Precision: 1.0000
+Recall: 0.9672
+F1-score: 0.9833
+Metrics: P: 183 Tp: 177 Fp: 0 N: 5_899 Tn: 5_899 Fn: 6
+P4:
+MCC: 0.9794
+Precision: 1.0000
+Recall: 0.9619
+F1-score: 0.9806
+Metrics: P: 420 Tp: 404 Fp: 0 N: 5_662 Tn: 5_662 Fn: 16
+
+Threshold: 0.92
+phage:
+MCC: 0.9802
+Precision: 0.9943
+Recall: 1.0000
+F1-score: 0.9971
+Metrics: P: 5_192 Tp: 5_192 Fp: 30 N: 890 Tn: 860 Fn: 0
+PICI:
+MCC: 0.9760
+Precision: 0.9893
+Recall: 0.9652
+F1-score: 0.9771
+Metrics: P: 287 Tp: 277 Fp: 3 N: 5_795 Tn: 5_792 Fn: 10
+CFPICI:
+MCC: 0.9830
+Precision: 1.0000
+Recall: 0.9672
+F1-score: 0.9833
+Metrics: P: 183 Tp: 177 Fp: 0 N: 5_899 Tn: 5_899 Fn: 6
+P4:
+MCC: 0.9781
+Precision: 1.0000
+Recall: 0.9595
+F1-score: 0.9793
+Metrics: P: 420 Tp: 403 Fp: 0 N: 5_662 Tn: 5_662 Fn: 17
+
+Threshold: 0.93
+phage:
+MCC: 0.9802
+Precision: 0.9943
+Recall: 1.0000
+F1-score: 0.9971
+Metrics: P: 5_192 Tp: 5_192 Fp: 30 N: 890 Tn: 860 Fn: 0
+PICI:
+MCC: 0.9760
+Precision: 0.9893
+Recall: 0.9652
+F1-score: 0.9771
+Metrics: P: 287 Tp: 277 Fp: 3 N: 5_795 Tn: 5_792 Fn: 10
+CFPICI:
+MCC: 0.9830
+Precision: 1.0000
+Recall: 0.9672
+F1-score: 0.9833
+Metrics: P: 183 Tp: 177 Fp: 0 N: 5_899 Tn: 5_899 Fn: 6
+P4:
+MCC: 0.9781
+Precision: 1.0000
+Recall: 0.9595
+F1-score: 0.9793
+Metrics: P: 420 Tp: 403 Fp: 0 N: 5_662 Tn: 5_662 Fn: 17
+
+Threshold: 0.94
+phage:
+MCC: 0.9782
+Precision: 0.9937
+Recall: 1.0000
+F1-score: 0.9968
+Metrics: P: 5_192 Tp: 5_192 Fp: 33 N: 890 Tn: 857 Fn: 0
+PICI:
+MCC: 0.9742
+Precision: 0.9892
+Recall: 0.9617
+F1-score: 0.9753
+Metrics: P: 287 Tp: 276 Fp: 3 N: 5_795 Tn: 5_792 Fn: 11
+CFPICI:
+MCC: 0.9772
+Precision: 1.0000
+Recall: 0.9563
+F1-score: 0.9777
+Metrics: P: 183 Tp: 175 Fp: 0 N: 5_899 Tn: 5_899 Fn: 8
+P4:
+MCC: 0.9781
+Precision: 1.0000
+Recall: 0.9595
+F1-score: 0.9793
+Metrics: P: 420 Tp: 403 Fp: 0 N: 5_662 Tn: 5_662 Fn: 17
+
+Threshold: 0.95
+phage:
+MCC: 0.9769
+Precision: 0.9933
+Recall: 1.0000
+F1-score: 0.9966
+Metrics: P: 5_192 Tp: 5_192 Fp: 35 N: 890 Tn: 855 Fn: 0
+PICI:
+MCC: 0.9723
+Precision: 0.9892
+Recall: 0.9582
+F1-score: 0.9735
+Metrics: P: 287 Tp: 275 Fp: 3 N: 5_795 Tn: 5_792 Fn: 12
+CFPICI:
+MCC: 0.9772
+Precision: 1.0000
+Recall: 0.9563
+F1-score: 0.9777
+Metrics: P: 183 Tp: 175 Fp: 0 N: 5_899 Tn: 5_899 Fn: 8
+P4:
+MCC: 0.9768
+Precision: 1.0000
+Recall: 0.9571
+F1-score: 0.9781
+Metrics: P: 420 Tp: 402 Fp: 0 N: 5_662 Tn: 5_662 Fn: 18
+
+Threshold: 0.96
+phage:
+MCC: 0.9742
+Precision: 0.9925
+Recall: 1.0000
+F1-score: 0.9963
+Metrics: P: 5_192 Tp: 5_192 Fp: 39 N: 890 Tn: 851 Fn: 0
+PICI:
+MCC: 0.9704
+Precision: 0.9892
+Recall: 0.9547
+F1-score: 0.9716
+Metrics: P: 287 Tp: 274 Fp: 3 N: 5_795 Tn: 5_792 Fn: 13
+CFPICI:
+MCC: 0.9744
+Precision: 1.0000
+Recall: 0.9508
+F1-score: 0.9748
+Metrics: P: 183 Tp: 174 Fp: 0 N: 5_899 Tn: 5_899 Fn: 9
+P4:
+MCC: 0.9742
+Precision: 1.0000
+Recall: 0.9524
+F1-score: 0.9756
+Metrics: P: 420 Tp: 400 Fp: 0 N: 5_662 Tn: 5_662 Fn: 20
+
+Threshold: 0.97
+phage:
+MCC: 0.9689
+Precision: 0.9910
+Recall: 1.0000
+F1-score: 0.9955
+Metrics: P: 5_192 Tp: 5_192 Fp: 47 N: 890 Tn: 843 Fn: 0
+PICI:
+MCC: 0.9629
+Precision: 0.9890
+Recall: 0.9408
+F1-score: 0.9643
+Metrics: P: 287 Tp: 270 Fp: 3 N: 5_795 Tn: 5_792 Fn: 17
+CFPICI:
+MCC: 0.9628
+Precision: 1.0000
+Recall: 0.9290
+F1-score: 0.9632
+Metrics: P: 183 Tp: 170 Fp: 0 N: 5_899 Tn: 5_899 Fn: 13
+P4:
+MCC: 0.9742
+Precision: 1.0000
+Recall: 0.9524
+F1-score: 0.9756
+Metrics: P: 420 Tp: 400 Fp: 0 N: 5_662 Tn: 5_662 Fn: 20
+
+Threshold: 0.98
+phage:
+MCC: 0.9608
+Precision: 0.9888
+Recall: 1.0000
+F1-score: 0.9944
+Metrics: P: 5_192 Tp: 5_192 Fp: 59 N: 890 Tn: 831 Fn: 0
+PICI:
+MCC: 0.9515
+Precision: 0.9925
+Recall: 0.9164
+F1-score: 0.9529
+Metrics: P: 287 Tp: 263 Fp: 2 N: 5_795 Tn: 5_793 Fn: 24
+CFPICI:
+MCC: 0.9628
+Precision: 1.0000
+Recall: 0.9290
+F1-score: 0.9632
+Metrics: P: 183 Tp: 170 Fp: 0 N: 5_899 Tn: 5_899 Fn: 13
+P4:
+MCC: 0.9690
+Precision: 1.0000
+Recall: 0.9429
+F1-score: 0.9706
+Metrics: P: 420 Tp: 396 Fp: 0 N: 5_662 Tn: 5_662 Fn: 24
+
+Threshold: 0.99
+phage:
+MCC: 0.9427
+Precision: 0.9837
+Recall: 1.0000
+F1-score: 0.9918
+Metrics: P: 5_192 Tp: 5_192 Fp: 86 N: 890 Tn: 804 Fn: 0
+PICI:
+MCC: 0.9303
+Precision: 0.9921
+Recall: 0.8780
+F1-score: 0.9316
+Metrics: P: 287 Tp: 252 Fp: 2 N: 5_795 Tn: 5_793 Fn: 35
+CFPICI:
+MCC: 0.9540
+Precision: 1.0000
+Recall: 0.9126
+F1-score: 0.9543
+Metrics: P: 183 Tp: 167 Fp: 0 N: 5_899 Tn: 5_899 Fn: 16
+P4:
+MCC: 0.9518
+Precision: 1.0000
+Recall: 0.9119
+F1-score: 0.9539
+Metrics: P: 420 Tp: 383 Fp: 0 N: 5_662 Tn: 5_662 Fn: 37
