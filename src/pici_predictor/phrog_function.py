@@ -163,6 +163,19 @@ thresholds_a = {
     "integration_and_excision": 0.05,
 }
 
+thresholds_b = {
+    "lysis": 0.7,
+    "tail": 0.7,
+    "connector": 0.7,
+    "dna_rna_and_nucleotide_metabolism": 0.7,
+    "head_and_packaging": 0.7,
+    "other": 0.7,
+    "transcription_regulation": 0.9,
+    "moron_auxiliary_metabolic_gene_and_host_takeover": 0.99,
+    "unknown_function": 0.7,
+    "integration_and_excision": 0.7,
+}
+
 # z-score params
 mu_neg_dict = {
     "lysis": 0.00064970204,

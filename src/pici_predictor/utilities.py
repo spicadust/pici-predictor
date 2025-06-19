@@ -234,14 +234,14 @@ def discover_pici(
     # Assign functions
     from pici_predictor.phrog_function import (
         function_name_formatted_to_num,
-        thresholds_a,
+        thresholds_b,
         mu_neg_dict,
         sigma_neg_dict,
     )
 
     predicted_function = assign_functions(
         predicted_prob,
-        thresholds_a,
+        thresholds_b,
         mu_neg_dict,
         sigma_neg_dict,
         function_name_formatted_to_num,
