@@ -44,6 +44,7 @@ def parse_gff(gff_dir, out_dir):
         pd.DataFrame(records).sort_values(["contig", "start"]).reset_index(drop=True)
     )
     gff_df.to_csv(out_dir, index=False)
+    print(f"gff_df.csv saved to {out_dir}")
     return gff_df
 
 
@@ -132,6 +133,7 @@ def predict_function(feature_df, out_dir, model_path):
         predicted_probs[function_name] = probs
 
     predicted_probs.to_csv(out_dir, index=False)
+    print(f"predicted_prob.csv saved to {out_dir}")
     return predicted_probs
 
 
@@ -168,6 +170,7 @@ def assign_functions(
     predicted_probs["function"] = predicted_probs.apply(assign_function_row, axis=1)
     predicted_probs["function_num"] = predicted_probs["function"].map(function_to_num)
     predicted_probs[["id", "function", "function_num"]].to_csv(out_dir, index=False)
+    print(f"predicted_function.csv saved to {out_dir}")
     return predicted_probs[["id", "function", "function_num"]]
 
 
@@ -175,7 +178,7 @@ def strand_to_num(strand_series):
     return strand_series.map({"+": 1, "-": -1}).values
 
 
-def window_with_direction(function_vector, strand_vector, window_size=30, step_size=1):
+def window_with_direction(function_vector, strand_vector, window_size, step_size=1):
     import numpy as np
 
     windows = []
@@ -196,7 +199,9 @@ def window_with_direction(function_vector, strand_vector, window_size=30, step_s
     return np.array(windows), np.array(directions), np.array(indices)
 
 
-def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
+def discover_pici(
+    data_dir, results_dir, model_function_path, model_pici_path, window_size
+):
     import os
     import numpy as np
     import pandas as pd
@@ -250,7 +255,6 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     merged = merged.sort_values(["contig", "start"]).reset_index(drop=True)
     function_vector = merged["function_num"].values
     strand_vector = strand_to_num(merged["strand"])
-    window_size = 30
 
     windows, directions, indices = window_with_direction(
         function_vector, strand_vector, window_size
@@ -285,6 +289,7 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     results["window_start_idx"] = indices
 
     merged.to_csv(os.path.join(results_dir, "merged.csv"), index=False)
+    print("merged.csv saved")
 
     # visualization
     def plot_pici_segments_heatmap(segments_df, function_vector, img_dir, type):
@@ -292,24 +297,47 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
         from matplotlib.colors import ListedColormap
         from pici_predictor.phrog_function import function_num_to_color
         import os
+        import numpy as np
 
         # Prepare data
         heatmap_data = np.array(segments_df["function_vector"].tolist())
+
+        # Print function vectors for inspection
+        print(f"\nFunction vectors for {type}:")
+        for i, row in segments_df.iterrows():
+            print(f"Segment {i + 1}: {row['function_vector']}")
+            print(
+                f"Location: {row.start_contig}:{row.genome_start}-{row.genome_end}, {'reverse' if not row.forward else 'forward'}"
+            )
+            print(f"Probability: {row.predicted_prob:.3f}\n")
+
         labels = [
             f"proba={row.predicted_prob:.3f}, {row.start_contig}:{row.genome_start}-{row.genome_end}, {'reverse' if not row.forward else 'forward'}"
             for _, row in segments_df.iterrows()
         ]
 
-        # Create colormap
-        function_nums_sorted = sorted(function_num_to_color.keys())
-        color_list = [function_num_to_color[num] for num in function_nums_sorted]
-        cmap = ListedColormap(color_list)
-        num_to_idx = {num: i for i, num in enumerate(function_nums_sorted)}
-        heatmap_indices = np.vectorize(num_to_idx.get)(heatmap_data)
+        # Print color mapping for verification
+        # print("\nColor mapping:")
+        # for num, color in sorted(function_num_to_color.items()):
+        #     print(f"Function {num}: {color}")
+
+        # Create direct mapping colormap
+        unique_nums = np.unique(heatmap_data)
+        # Create colormap using a direct mapping
+        colors = []
+        for num in range(int(max(unique_nums)) + 1):
+            if num in function_num_to_color:
+                colors.append(function_num_to_color[num])
+            else:
+                colors.append("#FFFFFF")  # White for any missing numbers
+
+        cmap = ListedColormap(colors)
 
         # Create plot
-        fig, ax = plt.subplots(figsize=(5, len(heatmap_indices) * 0.2))
-        im = ax.imshow(heatmap_indices, aspect="auto", cmap=cmap)
+        fig, ax = plt.subplots(figsize=(5, len(heatmap_data) * 0.2))
+        im = ax.imshow(
+            heatmap_data, aspect="auto", cmap=cmap, vmin=0, vmax=len(colors) - 1
+        )
 
         # Remove axes, ticks, and margins
         ax.axis("off")
@@ -321,7 +349,7 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
         # Add labels as text
         for i, label in enumerate(labels):
             ax.text(
-                heatmap_indices.shape[1]
+                heatmap_data.shape[1]
                 + 0.5,  # x position (just to the right of the heatmap)
                 i,  # y position (row)
                 label,
@@ -331,6 +359,7 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
                 color="black",
             )
         plt.title(f"{type}")
+
         # Save plot
         os.makedirs(img_dir, exist_ok=True)
         plt.savefig(
@@ -339,7 +368,10 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
             pad_inches=0,
             dpi=300,
         )
-        # plt.close()
+
+        # Display plot directly
+        plt.show()
+        plt.close()
 
     for type in ["PICI", "CFPICI", "P4"]:
         type_results = results[results["predicted_class_name"] == type].copy()
