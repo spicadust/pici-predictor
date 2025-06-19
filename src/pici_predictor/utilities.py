@@ -171,15 +171,29 @@ def assign_functions(
     return predicted_probs[["id", "function", "function_num"]]
 
 
-def window_vector(vec, window_size=30, step_size=1):
+def strand_to_num(strand_series):
+    return strand_series.map({"+": 1, "-": -1}).values
+
+
+def window_with_direction(function_vector, strand_vector, window_size=30, step_size=1):
     import numpy as np
 
     windows = []
+    directions = []
     indices = []
-    for i in range(0, len(vec) - window_size + 1, step_size):
-        windows.append(vec[i : i + window_size])
+    for i in range(0, len(function_vector) - window_size + 1, step_size):
+        func_win = function_vector[i : i + window_size]
+        strand_win = strand_vector[i : i + window_size]
+        strand_sum = np.sum(strand_win)
+        if strand_sum < 0:
+            # Reverse: flip the function vector for prediction
+            windows.append(func_win[::-1])
+            directions.append(False)  # False = reverse
+        else:
+            windows.append(func_win)
+            directions.append(True)  # True = forward
         indices.append(i)
-    return np.array(windows), np.array(indices)
+    return np.array(windows), np.array(directions), np.array(indices)
 
 
 def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
@@ -235,22 +249,15 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     )
     merged = merged.sort_values(["contig", "start"]).reset_index(drop=True)
     function_vector = merged["function_num"].values
+    strand_vector = strand_to_num(merged["strand"])
+    window_size = 30
 
-    merged.to_csv(os.path.join(results_dir, "merged.csv"), index=False)
-
-    # Forward windows
-    forward_windows, forward_indices = window_vector(
-        function_vector, window_size=30, step_size=1
-    )
-    # Reverse windows
-    reverse_vector = function_vector[::-1]
-    reverse_windows, reverse_indices = window_vector(
-        reverse_vector, window_size=30, step_size=1
+    windows, directions, indices = window_with_direction(
+        function_vector, strand_vector, window_size
     )
 
     def predict_pici_segments(windows, model_path, threshold=0.4, class_names=None):
         import xgboost as xgb
-        import pandas as pd
 
         model = xgb.XGBClassifier()
         model.load_model(model_path)
@@ -271,100 +278,26 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
         return df
 
     class_names = ["none", "PICI", "CFPICI", "P4"]
-    forward_results = predict_pici_segments(
-        forward_windows, model_pici_path, threshold=0.4, class_names=class_names
+    results = predict_pici_segments(
+        windows, model_pici_path, threshold=0.4, class_names=class_names
     )
-    reverse_results = predict_pici_segments(
-        reverse_windows, model_pici_path, threshold=0.4, class_names=class_names
-    )
-    forward_results["forward"] = True
-    reverse_results["forward"] = False
-    results = pd.concat([forward_results, reverse_results])
-    results.to_csv(pici_out_dir, index=False)
+    results["forward"] = directions
+    results["window_start_idx"] = indices
 
-    print(results["predicted_class_name"].value_counts())
-
-    # prepare predicted segments
-    def prepare_predicted_segments(results, function_vector, window_size, type):
-        N = len(function_vector)
-        segments = []
-
-        # Forward direction
-        forward_results = results[results["forward"]]
-        for idx in forward_results[
-            forward_results["predicted_class_name"] == type
-        ].index:
-            start_idx = idx
-            end_idx = idx + window_size - 1
-            if end_idx >= N:
-                continue  # skip if window exceeds genome
-            segment = {
-                "function_vector": function_vector[
-                    start_idx : end_idx + 1
-                ].tolist(),  # forward order
-                "start_idx": start_idx,
-                "end_idx": end_idx,
-                "forward": True,
-                "predicted_type": type,
-                "predicted_prob": forward_results.loc[idx, "max_probability"],
-            }
-            segments.append(segment)
-
-        # Reverse direction
-        reverse_results = results[~results["forward"]]
-        for rev_idx in reverse_results[
-            reverse_results["predicted_class_name"] == type
-        ].index:
-            # Map reversed window to forward indices
-            start_idx = N - rev_idx - 1
-            end_idx = N - (rev_idx + window_size)
-            if end_idx < 0 or start_idx >= N:
-                continue  # skip if window exceeds genome
-            # Store function_vector in window order (decreasing index)
-            func_vec = function_vector[start_idx : end_idx - 1 : -1].tolist()  # step -1
-            segment = {
-                "function_vector": func_vec,
-                "start_idx": start_idx,
-                "end_idx": end_idx,
-                "forward": False,
-                "predicted_type": type,
-                "predicted_prob": reverse_results.loc[rev_idx, "max_probability"],
-            }
-            segments.append(segment)
-        segments_df = pd.DataFrame(segments)
-        if len(segments_df) == 0:
-            # Return empty DataFrame with correct columns
-            return pd.DataFrame(
-                columns=[
-                    "function_vector",
-                    "start_idx",
-                    "end_idx",
-                    "forward",
-                    "predicted_type",
-                    "predicted_prob",
-                ]
-            )
-        segments_df = segments_df.sort_values("start_idx")
-        return segments_df
-
-    pici_segments = {}
-    for type in ["PICI", "CFPICI", "P4"]:
-        pici_segments[type] = prepare_predicted_segments(
-            results, function_vector, 30, type
-        )
+    merged.to_csv(os.path.join(results_dir, "merged.csv"), index=False)
 
     # visualization
-    def plot_pici_segments_heatmap(pici_segments, function_vector, img_dir, type):
+    def plot_pici_segments_heatmap(segments_df, function_vector, img_dir, type):
         import matplotlib.pyplot as plt
         from matplotlib.colors import ListedColormap
         from pici_predictor.phrog_function import function_num_to_color
         import os
 
         # Prepare data
-        heatmap_data = np.array(pici_segments["function_vector"].tolist())
+        heatmap_data = np.array(segments_df["function_vector"].tolist())
         labels = [
-            f"proba={row.predicted_prob:.3f}, pos:({row.start_idx}-{row.end_idx}), {'reverse' if not row.forward else 'forward'}"
-            for _, row in pici_segments.iterrows()
+            f"proba={row.predicted_prob:.3f}, {row.start_contig}:{row.genome_start}-{row.genome_end}, {'reverse' if not row.forward else 'forward'}"
+            for _, row in segments_df.iterrows()
         ]
 
         # Create colormap
@@ -409,10 +342,12 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
         # plt.close()
 
     for type in ["PICI", "CFPICI", "P4"]:
-        if len(pici_segments[type]) > 0:
-            plot_pici_segments_heatmap(
-                pici_segments[type], function_vector, img_dir, type
+        type_results = results[results["predicted_class_name"] == type].copy()
+        if len(type_results) > 0:
+            segments_df = prepare_predicted_segments(
+                type_results, function_vector, window_size, merged
             )
+            plot_pici_segments_heatmap(segments_df, function_vector, img_dir, type)
 
     # check
     # print(feature_df.head())
@@ -426,4 +361,39 @@ def discover_pici(data_dir, results_dir, model_function_path, model_pici_path):
     # print(predicted_function.shape)
     # print(merged.head())
     # print(merged.shape)
-    return pici_segments
+    return results
+
+
+def prepare_predicted_segments(results, function_vector, window_size, merged_df):
+    import pandas as pd
+
+    segments = []
+    for idx, row in results.iterrows():
+        start_idx = row["window_start_idx"]
+        end_idx = start_idx + window_size - 1
+        if end_idx >= len(function_vector):
+            continue
+        # Get genomic coordinates
+        start_row = merged_df.iloc[start_idx]
+        end_row = merged_df.iloc[end_idx]
+        # For visualization, always show function_vector in the direction of the segment
+        if row["forward"]:
+            func_vec = function_vector[start_idx : end_idx + 1].tolist()
+        else:
+            func_vec = function_vector[start_idx : end_idx + 1][::-1].tolist()
+        segment = {
+            "function_vector": func_vec,
+            "start_idx": start_idx,
+            "end_idx": end_idx,
+            "forward": row["forward"],
+            "predicted_type": row["predicted_class_name"],
+            "predicted_prob": row["max_probability"],
+            "start_contig": start_row["contig"],
+            "end_contig": end_row["contig"],
+            "genome_start": min(start_row["start"], end_row["start"]),
+            "genome_end": max(start_row["end"], end_row["end"]),
+            "start_strand": start_row["strand"],
+            "end_strand": end_row["strand"],
+        }
+        segments.append(segment)
+    return pd.DataFrame(segments)
