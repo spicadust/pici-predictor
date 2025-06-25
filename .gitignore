@@ -5,7 +5,6 @@ mash
 output/*
 notebook/*.py
 notebook/__pycache__
-models/*
 document/*
 src/pici_predictor/__pycache__/*
 src/pici_predictor/feature_generation.py
