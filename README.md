@@ -1,4 +1,4 @@
-## Machine learning-based discovery of phage-inducible chromosomal islands (PICIs) from protein functional patterns.
+## Machine learning-based discovery of phage-inducible chromosomal islands (PICIs) from protein functional patterns
 
 The project develops an end-to-end machine learning pipeline for identifying PICI-related elements in bacterial genomes using protein functional patterns rather than sequence homology.
 
